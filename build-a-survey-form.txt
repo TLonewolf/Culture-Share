@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <label id="name-label">Name (required):</label>
+    <input id="name" type="text" name="first-name" placeholder="Enter your name" required ><br>
+    <label id="email-label">Email (required):</label>
+    <input id="email" type="email" placeholder="Example@email.com" min="4" max="24" required><br>
+    <label id="number-label">Age(optional):</label>
+    <input id="number" type="number" min="13" max="35" placeholder="Age" value="Age"><br>
+  <p>Which category of anime do you like?</p>
+  <select id="dropdown">
+<option>Seinen</option>
+<option id="isekai">Isekai</option>
+<option id="shonen">Shonen</option>
+<option id="slice-of-life" selected>Slice of life</option>
+<option id="horror">Horror</option>
+<option id="sci-fi">Sci-fi</option>
+   </select>
+   <p>Whic is the most popular anime genre?</p>
+   <label for="fantasy">Fantasy</label>
+   <input type="radio" id="fantasy" value="fantasy" name="anime">
+   <label for="sci-fi">Sci-fi</label>
+   <input type="radio" id="sci-fi" value="sci-fi" name="anime">
+   <label for="shonen">Shonen</label>
+   <input type="radio" id="shonen" value="shonen" name="anime" checked>
+<p>Why do you like Anime?</p>
+<label for="Entertainment">Entertainment</label>
+<input type="checkbox" id="entertainment" value="entertainment" checked>
+<label for="hobbie">Hobbie</label>
+<input type="checkbox" id="hobbie" value="hobbie">
+<p>How did you start watching anime?</p>
+<textarea rows="8" cols="30" placeholder="the first anime i watched was..."></textarea><br>
+<button id="submit" type="submit">Submit</button>
+  </form>
+  </body>
+</html>
